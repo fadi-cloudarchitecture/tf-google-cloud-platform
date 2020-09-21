@@ -58,8 +58,7 @@ variable "skip_gcloud_download" {
 }
 
 variable "project_prefix" {
-  description = "Project prefix to distinguish different namespaces"
+  description = "Project prefix to distinguish different environments"
   type        = string
 }
 
-   
