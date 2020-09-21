@@ -16,7 +16,7 @@
 
 terraform {
   backend "gcs" {
-    bucket = "cft-tfstate-1d70"
+    bucket = "sbx-tfstate-1d70"
     prefix = "terraform/bootstrap/state"
   }
 }

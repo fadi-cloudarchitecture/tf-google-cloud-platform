@@ -23,3 +23,5 @@ group_org_admins = "gcp-organization-admins@sandbox.peek-cloppenburg.com"
 group_billing_admins = "gcp-billing-admins@sandbox.peek-cloppenburg.com"
 
 default_region = "europe-west1"
+
+project_prefix = "sbx" # prod: puc
