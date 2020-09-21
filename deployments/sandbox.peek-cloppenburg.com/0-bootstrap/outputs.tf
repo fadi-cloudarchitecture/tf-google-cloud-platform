@@ -63,36 +63,7 @@ output "kms_crypto_key" {
   value       = module.cloudbuild_bootstrap.kms_crypto_key
 }
 
-/* ----------------------------------------
-    Specific to jenkins_bootstrap module
-   ---------------------------------------- */
-//// Un-comment the jenkins_bootstrap module and its outputs if you want to use Jenkins instead of Cloud Build
-//output "cicd_project_id" {
-//  description = "Project where the cicd pipeline (Jenkins Agents and terraform builder container image) reside."
-//  value       = module.jenkins_bootstrap.cicd_project_id
-//}
-//
-//output "jenkins_agent_gce_instance_id" {
-//  description = "Jenkins Agent GCE Instance id."
-//  value       = module.jenkins_bootstrap.jenkins_agent_gce_instance_id
-//}
-//
-//output "jenkins_agent_vpc_id" {
-//  description = "Jenkins Agent VPC name."
-//  value       = module.jenkins_bootstrap.jenkins_agent_vpc_id
-//}
-//
-//output "jenkins_agent_sa_email" {
-//  description = "Email for privileged custom service account for Jenkins Agent GCE instance."
-//  value       = module.jenkins_bootstrap.jenkins_agent_sa_email
-//}
-//
-//output "jenkins_agent_sa_name" {
-//  description = "Fully qualified name for privileged custom service account for Jenkins Agent GCE instance."
-//  value       = module.jenkins_bootstrap.jenkins_agent_sa_name
-//}
-//
-//output "gcs_bucket_jenkins_artifacts" {
-//  description = "Bucket used to store Jenkins artifacts in Jenkins project."
-//  value       = module.jenkins_bootstrap.gcs_bucket_jenkins_artifacts
-//}
+output "project_prefix" {
+  description = "Environment project prefix"
+  value       = var.project_prefix
+}
