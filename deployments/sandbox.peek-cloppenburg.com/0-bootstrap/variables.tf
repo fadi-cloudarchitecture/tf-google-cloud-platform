@@ -37,7 +37,6 @@ variable "group_billing_admins" {
 variable "default_region" {
   description = "Default region to create resources where applicable."
   type        = string
-  default     = "us-central1"
 }
 
 variable "parent_folder" {
@@ -57,3 +56,10 @@ variable "skip_gcloud_download" {
   type        = bool
   default     = true
 }
+
+variable "project_prefix" {
+  description = "Project prefix to distinguish different namespaces"
+  type        = string
+}
+
+   
